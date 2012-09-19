@@ -1,7 +1,7 @@
 # Find "files" directory
 FILESEXTRAPATHS := "${THISDIR}/files"
 
-SRC_URI_append_vexpressa9 = " file://portmap.service"
+SRC_URI_append = " file://portmap.service"
 
 
 PACKAGES =+ "${PN}-systemd"
