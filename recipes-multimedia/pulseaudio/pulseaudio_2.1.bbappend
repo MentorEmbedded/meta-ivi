@@ -1,8 +1,3 @@
-FILESEXTRAPATHS := "${THISDIR}/${PN}"
-
-SRC_URI += "file://0001-systemd-complement-module-console-kit-with-module-sy.patch \
-           "
-
 DEPENDS = "libatomics-ops liboil libsamplerate0 libsndfile1 libtool ${@base_contains('DISTRO_FEATURES', 'x11', 'virtual/libx11 gtk+', '', d)} \
            udev alsa-lib glib-2.0 dbus  ${@base_contains('DISTRO_FEATURES', 'systemd', 'systemd', 'consolekit', d)} ${@base_contains('DISTRO_FEATURES', 'bluetooth', 'bluez4', '', d)} libjson gdbm speex libxml-parser-perl-native"
 
